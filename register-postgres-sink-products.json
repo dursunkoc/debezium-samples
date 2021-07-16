@@ -9,8 +9,7 @@
         "transforms.unwrap.type": "io.debezium.transforms.UnwrapFromEnvelope",
         "auto.create": "true",
         "insert.mode": "upsert",
-        "delete.enabled":"true",
         "pk.fields": "id",
-        "pk.mode": "record_key"
+        "pk.mode": "record_value"
     }
 }
