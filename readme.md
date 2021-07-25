@@ -12,11 +12,12 @@ This project contains two samples, first one reads data from postgresql and push
         |                |
         |   PostgreSQL   |
         |                |
-        +-------+--------+
+        +----------------+
+                +
                 |
                 |
-                |
-+---------------v------------------+
+                v
++----------------------------------+
 |                                  |
 |           Kafka Connect          |
 |  (Debezium, JDBC connectors)     |
@@ -63,21 +64,24 @@ docker-compose -f docker-compose-postgres.yaml down
                    |             |
                    |    MySQL    |
                    |             |
-                   +------+------+
+                   +-------------+
+                          +
                           |
                           |
                           |
-          +---------------v------------------+
+                          v
+          +----------------------------------+
           |                                  |
           |           Kafka Connect          |
           |  (Debezium, JDBC connectors)     |
           |                                  |
-          +---------------+------------------+
+          +----------------------------------+
+                          +
                           |
                           |
                           |
-                          |
-                 +--------v--------+
+                          v
+                 +-----------------+
                  |                 |
                  |    PostgreSQL   |
                  |                 |
